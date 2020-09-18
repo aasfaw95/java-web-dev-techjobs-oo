@@ -12,6 +12,13 @@ public class Location {
         nextId++;
     }
 
+    //It should call the first constructor to initialize the id field.
+    //It must also initialize the value field for a new Location object.
+
+    public Location(String value) {
+        this();
+        this.value = value;
+    }
     // TODO: Add a constructor that takes a string as a parameter and assigns it to the 'value' field. The
     //  constructor should also call the empty constructor in order to initialize the 'id' field.
 

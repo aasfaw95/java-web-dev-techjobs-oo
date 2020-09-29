@@ -71,6 +71,14 @@ public class Job {
         return id;
     }
 
+    public String toString() {
+                return "\n" + "ID: " + getId()+ "\nName: " + name + "\nEmployer: "
+                + employer + "\nLocation: " + location
+                + "\nPosition Type: " + positionType
+                + "\nCore Competency: " + coreCompetency + "\n";
+
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
